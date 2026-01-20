@@ -45,7 +45,7 @@ to quickly create a Cobra application.`,
 			tags = append(tags, readStdin())
 		}
 		if len(tags) == 0 {
-			fmt.Fprintf(os.Stderr, "Either --tag or --stdin is required\n", err)
+			fmt.Fprintf(os.Stderr, "Either --tag or --stdin is required\n")
 			os.Exit(1)
 		}
 
